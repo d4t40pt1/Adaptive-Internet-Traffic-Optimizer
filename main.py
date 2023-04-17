@@ -38,10 +38,6 @@ def get_long_int():
 
 #----------------------------------------------------------------------
 def get_google_header():
-    """None->str
-    As in https://github.com/cnbeining/datacompressionproxy/blob/master/background.js#L10-L18 .
-    P.S: This repo is a fork of the original one on google code.
-    """
     authValue = 'ac4500dd3b7579186c1b0620614fdb1f7d61f944'
     timestamp = str(int(time.time()))
     return 'ps=' + timestamp + '-' + get_long_int() + '-' + get_long_int() + '-' + get_long_int() + ', sid=' + md5((timestamp + authValue + timestamp).encode('utf-8')).hexdigest() + ', b=2403, p=61, c=win'
