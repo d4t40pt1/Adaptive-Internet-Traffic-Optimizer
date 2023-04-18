@@ -1,4 +1,6 @@
 
+HTTP/HTTPS forward proxy with content adaptive optimizer capabilities.
+One use case is to reduce bandwidth usage when browsing on limited mobile broadband connection.
 
 Usage
 ------
