@@ -15,6 +15,14 @@ Usage
     
     -i: Default: ''
         The IP address this proxy is listening on.
+        
+        
+    function FindProxyForURL(url, host) {
+        if (url.substring(0, 5) == 'http:' || url.substring(0, 6) == 'https:') {
+            return "HTTPS <your-domain>:9999";
+        }
+         return "DIRECT";
+        }
 
 
 Requirement
